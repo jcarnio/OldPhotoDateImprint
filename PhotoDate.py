@@ -8,8 +8,8 @@ from PIL.ExifTags import TAGS
 import time
 
 # Configurações de credenciais e endpoint da Azure
-subscription_key = "fc2f49516a3a41158af887431d9e87a7"
-endpoint = "https://photodate.cognitiveservices.azure.com/"
+subscription_key = "your subscription here"
+endpoint = "your endpoint here"
 
 # Cria o cliente do Computer Vision
 computervision_client = ComputerVisionClient(endpoint, CognitiveServicesCredentials(subscription_key))
@@ -98,7 +98,7 @@ def process_images_in_folder(folder_path):
                     print("Data não encontrada na imagem e não há data de criação nos metadados EXIF.")
 
 # Caminho para a pasta de entrada
-folder_path = r"D:\Fotografias\Aniversário Alexia 2006"
+folder_path = r"your photos path here"
 
 # Processa todas as imagens na pasta
 process_images_in_folder(folder_path)
